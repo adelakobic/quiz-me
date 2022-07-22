@@ -1,0 +1,22 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 22px;
+    font-family: "Helvetica", sans-serif;
+    background-color: rgba(146, 229, 129, 0.889);
+    padding: 10px;
+    border: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 18px;
+    margin: 5;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
