@@ -7,9 +7,11 @@
 body {
     font-size: 22px;
     font-family: "Helvetica", sans-serif;
-    background-color: rgba(146, 229, 129, 0.889);
-    padding: 10px;
+    background-color: rgba(180, 235, 169, 0.889);
+    border-style: dotted;
+    margin:10px;
     border: 20px;
+    padding: 10px;
     text-align: center;
 }
 
@@ -19,4 +21,10 @@ h1 {
     margin-top: 20px;
     margin-bottom: 30px;
     text-align: center;
+}
+
+.start {
+    background-color: rgb(233, 89, 178);
+    cursor: pointer;
+    max-width: 300px;
 }
