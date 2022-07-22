@@ -1,30 +1,53 @@
-*,
+*, 
 *::before,
 *::after {
     box-sizing: border-box;
 }
 
 body {
+    background-color: rgb(162, 245, 217);
+    background-blend-mode:luminosity;
     font-size: 22px;
-    font-family: "Helvetica", sans-serif;
-    background-color: rgba(180, 235, 169, 0.889);
-    border-style: dotted;
-    margin:10px;
-    border: 20px;
-    padding: 10px;
+    font-family: 'Cochin', Georgia, serif;
     text-align: center;
+    padding: 50px;
+    display: flex;
 }
 
 h1 {
-    font-size: 18px;
-    margin: 5;
-    margin-top: 20px;
-    margin-bottom: 30px;
     text-align: center;
 }
 
-.start {
-    background-color: rgb(233, 89, 178);
+h2 {
+    font-weight: 300;
+    margin: 0px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+button {
+    background-color: rgb(211, 134, 194);
+    border-radius: 30%;
+    font-size: 18px;
+    font-family: 'Cochin', Georgia, serif;
+    color: rgb(241, 244, 247);
     cursor: pointer;
-    max-width: 300px;
+    padding: 5px;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    border: none;
+    display:inline-block;
+    gap: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+
+.initials {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width: 500px;
+
 }

@@ -5,27 +5,40 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="Free cosing quiz" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <link rel="styleshhet" href="./quiz-assets/quiz-CSS/quiz-style.css" />
+        <link rel="stylesheet" href="./quiz-assets/quiz-CSS/quiz-style.css" />
         <title>Quiz Me Coding</title>
     </head>
 
     <!-- Body of the quiz site -->
     <body>
         <a href="quiz2.html">Go to Score Board</a>
-        <div></div>
         <main>
             <section>
                 <h1>Coding Quiz Challange</h1>
                 <div></div>
-                <p>Try to answer the following Code quiz questions within the time limit.
-                Any incorrect answers will penalise your score/ time left by 10 seconds!
+                <p>Try to answer the following Code quiz questions within the time limit.</p>
+                <br>
+                <p>Any incorrect answers will penalise your score/ time left by 10 seconds!
                 </p>
             </section>
 
             <div>
                 <button>Start Quiz</button>
+                <br>
+                <div class="container">
+                    <!-- Question container is hidden until start button is clicked -->
+                    <div id="question-container" class="hide">
+                        <br>
+                    <div id="question">Questions</div>
+                    <div id="answer-buttons" class="btn-grid">
+                        <br>
+                        <button class="btn">Answer A</button>
+                        <button class="btn">Answer B</button>
+                        <button class="btn">Answer C</button>
+                        <button class="btn">Answer D</button>
+                </div>
             </div>
-            <!-- Timer button -->
+            <!--  -->
             <section>
                 <div class="timer-button">
                 </div>
