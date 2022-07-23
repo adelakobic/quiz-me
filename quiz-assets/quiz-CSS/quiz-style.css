@@ -107,10 +107,15 @@ flex-wrap: wrap;
     clear: both;
 }
 
-#msge {
-    visibility: hidden;
+.timer-button {
+    height: 200px;
+    padding: 10px;
+    background-color: #f1e9e9;
+    font-size: larger;
+    color: rgb(194, 28, 56);
+    text-align: center;
 }
 
-#msge.success {
-    visibility: visible;
+.timer-text {
+    padding: 50px;
 }
