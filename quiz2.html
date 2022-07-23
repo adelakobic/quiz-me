@@ -11,7 +11,7 @@
 
     <!-- Body of the quiz site -->
     <body>
-        <a href="quiz1.html">Play again</a>
+        <a class='playAgain' href="quiz1.html">Play again</a>
         <div></div>
         <main>
             <section>
@@ -26,7 +26,7 @@
                 <div></div>
                 <form>
                     <label>Enter your initials: </label>
-                    <input type="text" id="initials">
+                    <input type="text" id="initials" placeholder="enter initials">
                 </form>
                 <br>
                 
@@ -38,6 +38,15 @@
                     <button class="goBackButton">Go back</button><br>
                     <div></div>
                     <button class="clearButton">Clear High Scores</button>
+                </div>
+                <div class="scoresList">
+                    <h3>Scoreboard</h3>
+                    <br>
+                    <div id="msge"></div>
+                    <p><strong>Initials</strong> <span id="initials"></span></p>
+                    <datalist type="text" id="initials" placeholder=" ">
+                    <p><strong>Score</strong> <span id="totalScore"></span></p>
+                    <datalist type="text" id="initials" placeholder=" "></datalist>
                 </div>
             </section>
         </main>

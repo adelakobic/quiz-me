@@ -44,6 +44,21 @@ button {
     margin-right: 20px;
 }
 
+.scoreBoard {
+    background-color: rgb(211, 134, 194);
+    border-radius: 30%;
+    font-size: 18px;
+    font-family: 'Cochin', Georgia, serif;
+    cursor: pointer;
+    padding: 5px;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    color: rgb(241, 244, 247);
+    display: inline-block;
+    margin-top: 20px;
+}
+
 button:hover {
 background-color: rgb(57, 155, 229);
 }
@@ -55,18 +70,47 @@ background-color: rgb(57, 155, 229);
 
 }
 
+.playAgain {
+    background-color: rgb(211, 134, 194);
+    border-radius: 30%;
+    font-size: 18px;
+    font-family: 'Cochin', Georgia, serif;
+    cursor: pointer;
+    padding: 5px;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    color: rgb(241, 244, 247);
+    display: inline-block;
+    margin-top: 20px;
+}
 .goBackClear {
     display: flex;
     gap: 10px;
     color: rgb(201, 60, 170);
 }
 
-/* Correct button should change colour to green */
-button.correct {
-    --hue:var(--hue-correct);
+.scoresList{
+background-color: #f1e9e9;
+border: 5px;
+border-radius: 10px;
+margin: 5%;
+padding: 10px;
+overflow: hidden;
+flex-direction: row;
+flex-wrap: wrap;
 }
 
-/* Wrong button should be colour red */
-button.wrong {
-    --hue:var(--hue-wrong);
+.scoresList::after {
+    content: " ";
+    display: inline-block;
+    clear: both;
+}
+
+#msge {
+    visibility: hidden;
+}
+
+#msge.success {
+    visibility: visible;
 }

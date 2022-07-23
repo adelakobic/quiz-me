@@ -1,6 +1,6 @@
 const startBtn = document.getElementById('startBtn');
 const question = document.getElementById('question');
-const choices = document.getElementById('choice-text');
+const choices = Array.from(document.getElementById('choice-text'));
 
 let currentQuestion = {};
 let acceptingAnswers = true;
@@ -8,8 +8,7 @@ let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
 
-
-/* List of quesions and answers */
+/* List of quesions and answers  for the quiz */
 let questions = [
     {
         question: 'Commonly used data types do NOT include: ', 
@@ -55,10 +54,37 @@ let questions = [
             choice4: 'console log 🖥 ',
             answer: 4
     },
-
-
-
 ]
+
+/* Constants */
+const max_questions = 5;
+
+/*function startQuiz() {
+    console.log('Quiz started')*/
+
+startQuiz = () => {
+    questionCounter = 0;
+    score = 0;
+    availableQuestions = [...questions]
+    console.log(availableQuestions);
+    getNextQustion();
+};
+
+getNextQustion = () => {
+    questionCounter++;
+    const questionIndex = Math.floor(Math.random() + availableQuestions.length);
+    currentQuestion = availableQuestions[questionIndex];
+    question.innerText = currentQuestion.question;
+
+    choices.forEach( choice => {
+        const number = choice.dataset['number'];
+        choice.innerText = currentQuestion['choice' + number];
+    })
+}
+
+startQuiz();
+
+
 /*const questionContainerElement = document.getElementById('questionContainer')
 const questionElement = document.getElementById('question')
 const answerButton = document.getElementById('answerButtons')*/
@@ -67,13 +93,11 @@ const answerButton = document.getElementById('answerButtons')*/
 /* startButton.addEventListener('click', startQuiz) */
 
 /* Start the game */
-function startQuiz() {
-console.log('Quiz started')
+
 /* startButton.classList.add('hide') */
-questionContainerElement.classList.remove('hide') /* is this needed? */
-currentQuestionIndex = 0
-nextQuestion()
-}
+/* questionContainerElement.classList.remove('hide') /* is this needed? */
+/*currentQuestionIndex = 0
+nextQuestion()}
 
 function nextQuestion() {
     showQuestion(currentQuestionIndex)
@@ -82,22 +106,14 @@ function nextQuestion() {
 
 function showQuestion(question){
     questionElement.innerText = question.question
-    /*question.answers.array.forEach(answers => {
+    question.answers.array.forEach(answers => {
         const button = document.createElement('button')
         button.classList.add('btn') 
         
-    }); */
+    }); 
 }
 
 function selectAnswer(){
     console.log('Answer selected')
-}
+}*/
 
-/* const questions = [
-     question, 'Q1: Commonly used data types do NOT include: ', 
-        answers, (
-        { Text: 'strings 🪢', correct: false },
-        { Text: 'booleans ✅❌', correct: false },
-        { Text: 'alerts 🚨', correct: true },
-        { Text: 'numbers 🔢', correct: false }
-    ) */

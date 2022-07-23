@@ -11,7 +11,7 @@
 
     <!-- Body of the quiz site -->
     <body>
-        <a href="quiz2.html">Go to Score Board</a>
+        <a class="scoreBoard" href="quiz2.html">Go to Score Board</a>
         <main>
             <section>
                 <h1>Coding Quiz Challange</h1>
@@ -23,34 +23,37 @@
             </section>
 
             <div>
-                <button id="startBtn">Start Quiz</button>
+                <button id="startBtn" href="/quiz1.html">Start Quiz</button>
                 <br>
                 <div class="container">
-                    <!-- Question container is hidden until start button is clicked -->
-                    <div id="questionContainer" class="hide">
-                        <br>
-                    <div id="question">What is the answer to these questions?</div>
-                    <div id="answerButtons" class="btn-grid">
-                        <br>
-                        <!-- Answer A -->
-                        <div class="choice-container"></div>
-                        <div class="choice-text" data-number="1"> Choice 1</div>
-                        <button class="btn">Answer A</button>
+                    <div id="home" class="flex-center flex-column">
+                        <!-- Question container is hidden until start button is clicked -->
+                        <div id="questionContainer">
+                            <br>
+                            <div id="question">What is the answer to these questions?</div>
+                            <div id="answerButtons" class="btn-grid">
+                            <br>
+                            <!-- Answer A -->
+                            <div class="choice-container"></div>
+                            <div id="choice-text" data-number="1"> Choice 1</div>
+                            <button class="btn">Answer A</button>
                         
-                        <!-- Answer B -->
-                        <div class="choice-container"></div>
-                        <div class="choice-text" data-number="2"> Choice 2</div>
-                        <button class="btn">Answer B</button>
+                            <!-- Answer B -->
+                            <div class="choice-container"></div>
+                            <div id="choice-text" data-number="2"> Choice 2</div>
+                            <button class="btn">Answer B</button>
                         
-                        <!-- Answer C -->
-                        <div class="choice-container"></div>
-                        <div class="choice-text" data-number="3"> Choice 3</div>
-                        <button class="btn">Answer C</button>
+                            <!-- Answer C -->
+                            <div class="choice-container"></div>
+                            <div id="choice-text" data-number="3"> Choice 3</div>
+                            <button class="btn">Answer C</button>
                         
-                        <!-- Answer D -->
-                        <div class="choice-container"></div>
-                        <div class="choice-text" data-number="4"> Choice D</div>
-                        <button class="btn">Answer D</button>
+                            <!-- Answer D -->
+                            <div class="choice-container"></div>
+                            <div id="choice-text" data-number="4"> Choice D</div>
+                            <button class="btn">Answer D</button>
+                        </div>
+                    </div>
                 </div><br>
                 <button>Next</button>
             </div>
