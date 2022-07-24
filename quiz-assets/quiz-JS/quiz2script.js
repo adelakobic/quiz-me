@@ -1,6 +1,13 @@
 /* enter initials  ID: initials */ 
 var enterInitials = document.querySelector("#enterInitials");
-var finallScore = document.querySelector("");
+var finalScore = document.querySelector("");
+
+// create list for the  score board
+var li = document.createElement("li");
+li.textContent = totalScore;  // check totalScore for correct element name 
+li.setAttribute("data-index", i); // data from quiz score 
+li.appendChild(button); //when submit button is clicked it shoudl add score & initial to score board list
+scoresList.appendChild(li);
 
 function storeInitials() {
     //store the players initilas
@@ -21,3 +28,5 @@ function displayScores() {
     li.getAttribute("data-index", i);
 }
 /* clear the scores on score board  class: clearButton */ 
+
+

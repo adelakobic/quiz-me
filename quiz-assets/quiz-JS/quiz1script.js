@@ -1,39 +1,32 @@
-/*const startBtn = document.getElementById('startBtn');
-const question = document.getElementById('question');
-const choices = Array.from(document.getElementById('choice-text'));
-
-let currentQuestion = {};
-let acceptingAnswers = true;
-let score = 0;
-let questionCounter = 0;
-let availableQuestions = []; */
-
 /* click the Start button to start the game */
 var startButton = document.getElementById('startBtn');
     startButton.addEventListener('click', startQuiz);
     function startQuiz(){
     var questionElement = document.createElement('p');
-    questionElement.innerText = questions[i].question; /*loop */
+    //questionElement.innerText = displayQuestions[i].question; /*loop */
     console.log('Quiz started');
     }
    /* bracket notation and dot notation for arrays and i for iterators  */
 
-var displayQuestions = document.getElementById('questionContainer');
-
+var displayAnswers = document.getElementById('questionContainer');
+    //displayAnswers.addEventListener('click', "choice-text");
+    var questionContainer = document.createElement('question');
+    //questionContainer.innerText = displayQuestions[i]
 
 /* move the buttons to javascript */
 /* List of quesions and answers  for the quiz */
 /* manipulate  the CSS into java use the class/ID names */
 
+
 /* possible solution? : $("ol").append("<li>" + var name + "</li">); */
-let questions = [
-    {
+var randomQuestions = [
+    { // stack overflow version??
         question: 'Commonly used data types do NOT include: ', 
             choice1: 'strings 🪢',
             choice2: 'booleans ✅❌',
             choice3: 'alerts 🚨',
             choice4: 'numbers 🔢',
-            answer: 3
+            answer: 3,
     },
 
     {
@@ -73,64 +66,16 @@ let questions = [
     },
 ]
 
-/* Constants */
-const max_questions = 5;
 
-/*function startQuiz() {
-    console.log('Quiz started')*/
+// answer buttons ID btn
+// score
 
-startQuiz = () => {
-    questionCounter = 0;
-    score = 0;
-    availableQuestions = [...questions]
-    console.log(availableQuestions);
-    getNextQustion();
-};
-
-getNextQustion = () => {
-    questionCounter++;
-    const questionIndex = Math.floor(Math.random() + availableQuestions.length);
-    currentQuestion = availableQuestions[questionIndex];
-    question.innerText = currentQuestion.question;
-
-    choices.forEach( choice => {
-        const number = choice.dataset['number'];
-        choice.innerText = currentQuestion['choice' + number];
-    })
-}
-
-startQuiz();
+const scorePoints = 5
+const maxQuestions = 5
 
 
-/*const questionContainerElement = document.getElementById('questionContainer')
-const questionElement = document.getElementById('question')
-const answerButton = document.getElementById('answerButtons')*/
+// storage of results
 
-/* Event listeners on the buttons */
-/* startButton.addEventListener('click', startQuiz) */
 
-/* Start the game */
-
-/*startButton.classList.add('hide') */
-/* questionContainerElement.classList.remove('hide') /* is this needed? */
-/*currentQuestionIndex = 0
-nextQuestion()}
-
-function nextQuestion() {
-    showQuestion(currentQuestionIndex)
-    console.log('Next question')
-}
-
-function showQuestion(question){
-    questionElement.innerText = question.question
-    question.answers.array.forEach(answers => {
-        const button = document.createElement('button')
-        button.classList.add('btn') 
-        
-    }); 
-}
-
-function selectAnswer(){
-    console.log('Answer selected')
-}*/
+/* Timer on game */
 

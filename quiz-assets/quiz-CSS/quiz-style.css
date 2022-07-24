@@ -26,7 +26,13 @@ h2 {
     text-align: center;
 }
 
-button {
+.container {
+    background-color: rgb(76, 203, 150);
+    border-radius: 6px;
+    margin-bottom: 30px;
+}
+
+.btn {
     background-color: rgb(211, 134, 194);
     border-radius: 30%;
     font-size: 18px;
@@ -35,15 +41,17 @@ button {
     cursor: pointer;
     padding: 5px;
     width: 100px;
-    height: 50px;
+    height: 40px;
     text-align: center;
-    border: none;
+    margin-top: 40px;
+    margin-bottom: 20px;
     display:inline-block;
     gap: 10px;
     margin-left: 20px;
     margin-right: 20px;
 }
 
+/* Scoreboard on the second page HTML 2 */
 .scoreBoard {
     background-color: rgb(211, 134, 194);
     border-radius: 30%;
@@ -84,10 +92,35 @@ background-color: rgb(57, 155, 229);
     display: inline-block;
     margin-top: 20px;
 }
-.goBackClear {
-    display: flex;
-    gap: 10px;
-    color: rgb(201, 60, 170);
+
+.clearButton {
+    background-color: rgb(211, 134, 194);
+    border-radius: 30%;
+    font-size: 18px;
+    font-family: 'Cochin', Georgia, serif;
+    cursor: pointer;
+    padding: 5px;
+    width: 150px;
+    height: 60px;
+    text-align: center;
+    color: rgb(241, 244, 247);
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.submitBtn {
+    background-color: rgb(211, 134, 194);
+    border-radius: 30%;
+    font-size: 18px;
+    font-family: 'Cochin', Georgia, serif;
+    cursor: pointer;
+    padding: 5px;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    color: rgb(241, 244, 247);
+    display: inline-block;
+    margin-top: 20px;
 }
 
 .scoresList{
@@ -107,7 +140,7 @@ flex-wrap: wrap;
     clear: both;
 }
 
-.timer-button {
+.timer {
     height: 200px;
     padding: 10px;
     background-color: #f1e9e9;

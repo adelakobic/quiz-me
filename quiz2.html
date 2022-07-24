@@ -30,15 +30,14 @@
                 </form>
                 <br>
                 
-                <button id="submitButton">Submit</button><br>
+                <button class="submitBtn">Submit</button><br>
             </div><br><br>
-            <!-- Go Back and Clear high scores buttons x 2 -->
+            <!-- Clear high scores buttons x 2 -->
             <section>
                 <div class="goBackClear">
-                    <button a class="goBackButton" href="./quiz1.html">Go back</button><br>
-                    <div></div>
                     <button class="clearButton">Clear High Scores</button>
                 </div>
+
                 <!-- Scoreboard form -->
                 <div class="scoresList">
                     <h3>Scoreboard</h3>
@@ -46,6 +45,7 @@
                     <form id="initials" method="post"></form>
                     <p><strong>Initials</strong> <span id="initials"></span></p>
                     <label id="enterInitials" type="text" placeholder="your initials "></label>
+                    <ul datalist type="text"></datalist>
                     <p><strong>Score</strong> <span id="totalScore"></span></p>
                     <ul type="data-number" id="totalScore" placeholder="your score"></ul>
                 </div>
