@@ -1,4 +1,4 @@
-const startBtn = document.getElementById('startBtn');
+/*const startBtn = document.getElementById('startBtn');
 const question = document.getElementById('question');
 const choices = Array.from(document.getElementById('choice-text'));
 
@@ -6,9 +6,26 @@ let currentQuestion = {};
 let acceptingAnswers = true;
 let score = 0;
 let questionCounter = 0;
-let availableQuestions = [];
+let availableQuestions = []; */
 
+/* click the Start button to start the game */
+var startButton = document.getElementById('startBtn');
+    startButton.addEventListener('click', startQuiz);
+    function startQuiz(){
+    var questionElement = document.createElement('p');
+    questionElement.innerText = questions[i].question; /*loop */
+    console.log('Quiz started');
+    }
+   /* bracket notation and dot notation for arrays and i for iterators  */
+
+var displayQuestions = document.getElementById('questionContainer');
+
+
+/* move the buttons to javascript */
 /* List of quesions and answers  for the quiz */
+/* manipulate  the CSS into java use the class/ID names */
+
+/* possible solution? : $("ol").append("<li>" + var name + "</li">); */
 let questions = [
     {
         question: 'Commonly used data types do NOT include: ', 
@@ -94,7 +111,7 @@ const answerButton = document.getElementById('answerButtons')*/
 
 /* Start the game */
 
-/* startButton.classList.add('hide') */
+/*startButton.classList.add('hide') */
 /* questionContainerElement.classList.remove('hide') /* is this needed? */
 /*currentQuestionIndex = 0
 nextQuestion()}

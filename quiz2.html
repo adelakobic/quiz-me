@@ -35,22 +35,23 @@
             <!-- Go Back and Clear high scores buttons x 2 -->
             <section>
                 <div class="goBackClear">
-                    <button class="goBackButton">Go back</button><br>
+                    <button a class="goBackButton" href="./quiz1.html">Go back</button><br>
                     <div></div>
                     <button class="clearButton">Clear High Scores</button>
                 </div>
+                <!-- Scoreboard form -->
                 <div class="scoresList">
                     <h3>Scoreboard</h3>
                     <br>
-                    <div id="msge"></div>
+                    <form id="initials" method="post"></form>
                     <p><strong>Initials</strong> <span id="initials"></span></p>
-                    <datalist type="text" id="initials" placeholder=" ">
+                    <label id="enterInitials" type="text" placeholder="your initials "></label>
                     <p><strong>Score</strong> <span id="totalScore"></span></p>
-                    <datalist type="text" id="initials" placeholder=" "></datalist>
+                    <ul type="data-number" id="totalScore" placeholder="your score"></ul>
                 </div>
             </section>
         </main>
-        <!-- JavaSCript link JS file 1 -->
-        <script src="./quiz-assets/quiz-JS/quiz1script.js"></script>
+        <!-- JavaSCript link JS file 2 for scoreboard stuff -->
+        <script src="./quiz-assets/quiz-JS/quiz2script.js"></script>
     </body>
 </html>
