@@ -32,17 +32,17 @@ Actual preview of ---.
 ![Preview GIF animation of how the game should work.](./quiz-assets/quiz-images/04-web-apis-homework-demo.gif)
 
 ## Problems encountered 🤯
-* geting 
+* geting the JavaScript to work
 
 ## Changes made to the code 𝌡
-* the 
+* HTML code created 23/7/22
+* CSS code created 23/7/22
+* different JS code attempted but not working at present 
 
 ## Link to the deployed website 💻
 
 ## Credits 💃🏻
-* Picture credits as follows: 
-    * Pikisuperstar. (2022, July 6) Freepik.com. <a href="https://www.freepik.com/vectors/abstract-mountain">Abstract mountain vector created by pikisuperstar - www.freepik.com</a>
-    (mountain picture) 
+* Code created by Adela Kobic. 
 
 ## Licence 🪪
-* 
+* No Licence issued for this project.

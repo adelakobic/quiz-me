@@ -32,7 +32,51 @@ h2 {
     margin-bottom: 30px;
 }
 
-.btn {
+/* Start Button */
+#startBtn {
+    background-color: rgb(211, 134, 194);
+    border-radius: 30%;
+    font-size: 18px;
+    font-family: 'Cochin', Georgia, serif;
+    color: rgb(241, 244, 247);
+    cursor: pointer;
+    padding: 5px;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    display:inline-block;
+    gap: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.container::after {
+    content: "";
+    display: grid;
+    clear: both;
+}
+
+.btn1, .btn2, .btn3, .btn4 {
+    background-color: rgb(211, 134, 194);
+    border-radius: 30%;
+    font-size: 18px;
+    font-family: 'Cochin', Georgia, serif;
+    color: rgb(241, 244, 247);
+    cursor: pointer;
+    padding: 5px;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    display:inline-block;
+    gap: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#nextBtn {
     background-color: rgb(211, 134, 194);
     border-radius: 30%;
     font-size: 18px;
