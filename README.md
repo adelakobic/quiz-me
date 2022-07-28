@@ -43,7 +43,7 @@ Actual preview of ---.
 *
 
 ## Link to the deployed website 💻
-URL : 
+URL : https://adelakobic.github.io/quiz-me/
 ## Credits 💃🏻
 * Code created by Adela Kobic. 
 
