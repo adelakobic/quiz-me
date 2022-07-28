@@ -33,6 +33,7 @@ Actual preview of ---.
 
 ## Problems encountered 🤯
 * geting the JavaScript to work
+* JavaSCript keeps throwing up console error messages which I have been unable to resolve 28/7/22 
 
 ## Changes made to the code 𝌡
 * HTML code created 23/7/22
@@ -42,7 +43,7 @@ Actual preview of ---.
 *
 
 ## Link to the deployed website 💻
-
+URL : 
 ## Credits 💃🏻
 * Code created by Adela Kobic. 
 
