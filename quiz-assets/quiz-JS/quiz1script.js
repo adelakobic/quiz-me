@@ -1,16 +1,12 @@
-//start from line 90!!//
+/* click the Start button to start the game  - start button wouldnt work*/
 
-/* click the Start button to start the game */
-var startButton = document.getElementById('#startBtn');
-    //startButton.addEventListener('click', startQuiz);
-    function startQuiz(){
-        startButton.addEventListener('click', startQuiz)
-        console.log('Quiz started');
-}
    /* bracket notation and dot notation for arrays and i for iterators  */
-
+var answerButtons = document.addEventListener("click", function() {
+    document.getElementById("btn1", "btn2", "btn3", "btn4")
+});
+    
 var nextButton = document.addEventListener("click", function() {
-    document.getElementById('#nextBtn').innerText = " ";
+    document.getElementById('#nextBtn').innerText = "";
     console.log('Next question');
 })
     //questionElement.innerText = displayQuestions[i].question; /*loop */
@@ -75,16 +71,16 @@ var QuizUI = {
                     this.guessHandler("guess" + choices[i]);
                 }
             }
-    }
+    } //
 
 // display questions 
 var questions = document.createElement("p");
-package.textContent = ""; [
+container.textContent = "newQuestion"; [
     newQuestion('Commonly used data types do NOT include:', ['strings 🪢', 'booleans ✅❌', 'alerts 🚨', 'numbers 🔢'], 'alerts'),
     newQuestion('The condition in an if/ else statement is enclosed with _________.', ['quotes " " ', 'curly brackets { } ', 'parenthesis ( ) ', 'square brackets [ ] '], 'curly brackets'),
     newQuestion('Arrays in JavaScript can be used to store:', ['numbers and strings 🔢  🪢', 'other arrays  𐑼 🧮', 'booleans  ✅❌', 'all of the above 👆🏻'], 'all of the above'),
     newQuestion('String values must be enclosed within ____________ when being assigned to variables.', ['commas , ', 'curly brackets { } ', 'quotes " " ', 'parenthesis ( ) '], 'quotes'),
-    newQuestion('A very useful tool used during developments and debugging for printing content to the debugger is ', ['JavaScript  💻 ', 'terminal/ bash  🗃 ', 'for loops  🔁 ', 'console log 🖥 '], 'console log')
+    //newQuestion('A very useful tool used during developments and debugging for printing content to the debugger is ', ['JavaScript  💻 ', 'terminal/ bash  🗃 ', 'for loops  🔁 ', 'console log 🖥 '], 'console log')
 ]; 
 
 // Create quiz 

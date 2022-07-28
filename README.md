@@ -37,7 +37,9 @@ Actual preview of ---.
 ## Changes made to the code 𝌡
 * HTML code created 23/7/22
 * CSS code created 23/7/22
-* different JS code attempted but not working at present 
+* different JS code attempted but not working at present 24/7/22
+* got rid of the start button and entered the quiz questions into the HTML isntead 28/7/22
+*
 
 ## Link to the deployed website 💻
 

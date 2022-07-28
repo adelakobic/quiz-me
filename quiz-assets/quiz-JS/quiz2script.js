@@ -1,12 +1,20 @@
 /* enter initials  ID: initials */ 
-var enterInitials = document.querySelector("#enterInitials");
-var finalScore = document.querySelector("");
+var enterInitials;
+var finalScore;
+
+function submitInitials(event) {
+    event.preventDefault();
+    console.log(typeof enterInitials);
+    event.appendChild
+}
 
 // create list for the  score board
 var li = document.createElement("li");
+li.ol.textContent = "enterInials";
+document.body.appendChild(newP)
 li.textContent = totalScore;  // check totalScore for correct element name 
-li.setAttribute("data-index", i); // data from quiz score 
-li.appendChild(button); //when submit button is clicked it shoudl add score & initial to score board list
+li.setAttribute(i); // data from quiz score 
+li.appendChild('p'); //when submit button is clicked it shoudl add score & initial to score board list
 scoresList.appendChild(li);
 
 function storeInitials() {
