@@ -13,16 +13,24 @@
     <body>
         <a class="scoreBoard" href="quiz2.html">Go to Score Board</a>
         <main>
-            <section>
+            <section id="clock">
+                <div class="timer">
+                    <div class="timer-text">
+                    <div class="large-font timer-count">60</div>
+                    <h4>seconds remaining</h4>
+                </div>
+            </section>
+            <section id="startBox">
                 <h1>Coding Quiz Challange</h1>
                 <div></div>
                 <p>Try to answer the following Code quiz questions within the time limit.</p>
                 <br>
                 <p>Any incorrect answers will penalise your score/ time left by 10 seconds!
                 </p>
+                <button id="startBtn">Start Quiz</button>
             </section>
 
-            <div>
+            <div id="questionBox" style = "display: none">
                 <!--<button id="startBtn" href="/quiz1.html">Start Quiz</button> -->
                 <br>
                 <br>
@@ -36,36 +44,34 @@
                             <br>
                             <!-- Answer A -->
                             <div class="choice-container"></div>
-                            <div id="choice-text1" data-number="1">JavaScript  💻</div>
-                            <p class="btn1">Answer A</p>
+                            <!-- <div id="choice-text1" data-number="1">JavaScript  💻</div>
+                            <input type="button" value="Answer A" class="btn1 btn"/>
+
+                            <button>Javascript</button>
                         
-                            <!-- Answer B -->
+                            Answer B
                             <div class="choice-container"></div>
                             <div id="choice-text2" data-number="2">terminal/ bash  🗃</div>
-                            <p class="btn2">Answer B</p>
+                            <input type="button" value="Answer B" class="btn2 btn"/>
                         
-                            <!-- Answer C -->
+                            Answer C
                             <div class="choice-container"></div>
                             <div id="choice-text3" data-number="3">for loops  🔁</div>
-                            <p class="btn3">Answer C</p>
+                            <input type="button" value="Answer C" class="btn3 btn"/>
                         
-                            <!-- Answer D -->
+                            Answer D
                             <div class="choice-container"></div>
                             <div id="choice-text4" data-number="4">console log 🖥</div>
-                            <p class="btn4">Answer D</p>
+                            <input type="button" value="Answer D" class="btn4 btn"> -->
                         </div>
                     </div>
                 </div><br>
-                <button id="nextBtn">Next</button>
+                <!--button id="nextBtn">Next</button-->
             </div>
-            <!-- Timer button -->
-            <section>
-                -<div class="timer">
-                    <div class="timer-text">
-                    <div class="large-font timer-count">60</div>
-                    <h4>seconds remaining</h4>
-                </div>-
-            </section>
+            <div id="gameOver" style="display: none">
+                <h2>Game over!</h2>
+            </div>
+           
         </main>
         <footer>Created by Adela Kobic</footer>
         <!-- JavaSCript link JS file 1 -->
