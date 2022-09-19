@@ -31,16 +31,22 @@ THEN I can save my initials and score
 Actual preview of ---. 
 ![Preview GIF animation of how the game should work.](./quiz-assets/quiz-images/04-web-apis-homework-demo.gif)
 
+URL link to the deployed website: 
+![Link to deployed website.](https://adelakobic.github.io/quiz-me/)
+
 ## Problems encountered 🤯
 * geting the JavaScript to work
 * JavaSCript keeps throwing up console error messages which I have been unable to resolve 28/7/22 
+* 16/9/22 when the start button is clicked - the question appears but not the answers
 
 ## Changes made to the code 𝌡
 * HTML code created 23/7/22
 * CSS code created 23/7/22
 * different JS code attempted but not working at present 24/7/22
-* got rid of the start button and entered the quiz questions into the HTML isntead 28/7/22
-*
+* got rid of the start button and entered the quiz questions into the HTML instead 28/7/22
+* revisited the code to look at JS - timer has been deployed so it counts down 16/9/22
+* moved the questions into arrays 16/9/22
+* changed HTML to be more simpler 16/9/22
 
 ## Link to the deployed website 💻
 URL : https://adelakobic.github.io/quiz-me/
